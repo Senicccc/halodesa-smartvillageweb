@@ -184,6 +184,21 @@ export default function AdminDashboard() {
           >
             Pengumuman
           </button>
+          <button
+            className={`underline ${
+              activeMenu === "pengumuman" ? "font-bold" : ""
+            }`}
+            onClick={() => setActiveMenu("pengumuman")}
+          >
+            Pengumuman
+          </button>
+          <span>|</span>
+          <button
+            className="flex items-center gap-1 underline hover:text-red-600"
+            onClick={() => router.push("/admin/login")}
+          >
+            <LogOut size={12} /> Keluar
+          </button>
         </div>
 
         {alert.message && (
