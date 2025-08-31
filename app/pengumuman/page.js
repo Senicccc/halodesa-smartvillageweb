@@ -112,8 +112,8 @@ export default function PengumumanPage() {
                     {expandedId === p.id ? "▲" : "▼"}{" "}
                     <span>
                       {expandedId === p.id
-                        ? "Klik untuk menutup detail"
-                        : "Klik untuk melihat detail"}
+                        ? "Detail"
+                        : "Tutup"}
                     </span>
                   </span>
                 </button>
