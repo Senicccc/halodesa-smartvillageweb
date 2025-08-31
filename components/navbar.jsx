@@ -54,13 +54,13 @@ export default function Navbar() {
 
         {/* Burger Mobile */}
         <button
-          className="md:hidden p-2 hover:bg-gray-200 transition rounded-none"
+          className="md:hidden p-2 hover:bg-green-100 transition rounded-none"
           onClick={() => setOpen(!open)}
         >
           {open ? (
-            <X className="w-6 h-6 text-black-800" />
+            <X className="w-6 h-6 text-green-600" />
           ) : (
-            <Menu className="w-6 h-6 text-black-800" />
+            <Menu className="w-6 h-6 text-green-600" />
           )}
         </button>
       </div>
@@ -69,32 +69,32 @@ export default function Navbar() {
       {open && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-4 font-medium bg-white backdrop-blur-md animate-slideDown rounded-none text-gray-700">
           <a
-            href="#home"
+            href="/"
             onClick={() => setOpen(false)}
             className="hover:text-green-600"
           >
             Home
           </a>
           <a
-            href="#about"
+            href="/laporan"
+            onClick={() => setOpen(false)}
+            className="hover:text-green-600"
+          >
+            Laporan
+          </a>
+          <a
+            href="/pengumuman"
+            onClick={() => setOpen(false)}
+            className="hover:text-green-600"
+          >
+            Pengumuman
+          </a>
+          <a
+            href="/about"
             onClick={() => setOpen(false)}
             className="hover:text-green-600"
           >
             Tentang
-          </a>
-          <a
-            href="#features"
-            onClick={() => setOpen(false)}
-            className="hover:text-green-600"
-          >
-            Fitur
-          </a>
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
-            className="hover:text-green-600"
-          >
-            Kontak
           </a>
         </div>
       )}
