@@ -112,8 +112,8 @@ export default function PengumumanPage() {
                     {expandedId === p.id ? "▲" : "▼"}{" "}
                     <span>
                       {expandedId === p.id
-                        ? "Detail"
-                        : "Tutup"}
+                        ? "Tutup"
+                        : "Detail"}
                     </span>
                   </span>
                 </button>
